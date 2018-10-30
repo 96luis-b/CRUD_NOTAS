@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="transparent-header">
+    <div padding>
+      <ion-item>
+        <ion-input type="text" placeholder="Username" #username></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Password" #password></ion-input>
+      </ion-item>
+      <button ion-button block outline (click)="login()" color="light" class="login-button">Login</button>
+    </div>
+  </ion-content> 
+
+  <ion-footer>
+    <ion-toolbar class="footer">
+      <div (click)="goToSignup()">
+        <span>Don't have an account? <strong>Sign up here</strong>.</span>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+
+
+
+
+
+
+<!--
+<ion-header>
+  <ion-navbar>
+  <ion-title>Login</ion-title>
+  </ion-navbar>
+  </ion-header>
+  <ion-content padding id="content-login">
+  <ion-list>
+  <ion-item>
+  <ion-label floating>Username</ion-label>
+  <ion-input type="text" value="" #username></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label floating>Password</ion-label>
+  <ion-input type="password" #password></ion-input>
+  </ion-item>
+  </ion-list>
+  <div padding>
+  <button block ion-button (click)="login()" >Start Session</button>
+  </div> 
+  </ion-content>
+-->
